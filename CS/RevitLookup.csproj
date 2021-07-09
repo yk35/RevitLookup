@@ -10,7 +10,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Configurations>Debug;Release;Release2020;Release2018;Release2022;Release2021;Release2019</Configurations>
+    <Configurations>Debug;Release;Release2020;Release2018;Release2022;Release2021;Release2019;Debug2020;Debug2018;Debug2022;Debug2021;Debug2019</Configurations>
   </PropertyGroup>
   <Import Project="$(SolutionDir)Targets\Revit.Base.Targets" Condition="Exists('$(SolutionDir)Targets\Revit.Base.Targets')" /> <!-- 各Revitバージョンに合わせた.Net Frameworkバージョンとバージョンに合わせた定数を記載しています。 -->
   <Import Project="$(SolutionDir)Targets\Revit.RevitAPI.Targets" Condition="Exists('$(SolutionDir)Targets\Revit.RevitAPI.Targets')" /> <!-- 各Revitバージョンに合わせたRevitAPI.dll参照先を記載しています。 RevitAPIを使ってないなら必要なし。-->
