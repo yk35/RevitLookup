@@ -60,7 +60,7 @@ namespace RevitLookup.Snoop.CollectorExts
                     return new ScheduleDefinitionGetFields(methodInfo.Name, (ScheduleDefinition)elem);
             }
 
-            #if REVIT2022
+            #if !(REVIT2018 || REVIT2019 || REVIT2020 || REVIT2021)
             if (declaringType == typeof(ViewCropRegionShapeManager) && methodInfo.Name == nameof(ViewCropRegionShapeManager.GetSplitRegionOffset))
                 return new ViewCropRegionShapeManagerGetSplitRegionOffsets(methodInfo.Name, (ViewCropRegionShapeManager)elem);
             #endif

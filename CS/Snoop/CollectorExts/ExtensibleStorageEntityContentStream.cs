@@ -52,10 +52,10 @@ namespace RevitLookup.Snoop.CollectorExts
 
         var genericGet = getEntityValueMethod.MakeGenericMethod( valueType );
 
-        #if REVIT2021 || REVIT2022
-        var unit = UnitUtils.GetValidUnits( field.GetSpecTypeId() ).First(); // 2021
-        #else
+        #if (REVIT2018 || REVIT2019 || REVIT2020)
         var unit = UnitUtils.GetValidDisplayUnits( field.UnitType ).First(); // 2020
+        #else
+        var unit = UnitUtils.GetValidUnits(field.GetSpecTypeId()).First(); // 2021
         #endif
 
         var parameters = getEntityValueMethod.GetParameters().Length == 1

@@ -28,7 +28,7 @@ namespace RevitLookup.Snoop.CollectorExts
 
       // Filter out non family types.
 
-      #if REVIT2022
+      #if !(REVIT2018 || REVIT2019 || REVIT2020 || REVIT2021)
       if (!Category.IsBuiltInCategory(parameter.Definition.GetDataType())) // Revit 2022
         return;
       #else
