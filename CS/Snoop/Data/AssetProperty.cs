@@ -36,7 +36,11 @@ namespace RevitLookup.Snoop.Data
                 ArrayList objs = new ArrayList();
                 for (int i = 0; i < m_assetProperties.Size; i++)
                 {
+                    #if REVIT2018
+                    objs.Add(m_assetProperties[i]);
+                    #else
                     objs.Add(m_assetProperties.Get(i));
+                    #endif
                 }
                 
 

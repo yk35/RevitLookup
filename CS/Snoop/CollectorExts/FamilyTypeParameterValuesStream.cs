@@ -28,11 +28,13 @@ namespace RevitLookup.Snoop.CollectorExts
 
       // Filter out non family types.
 
-      //if (parameter.Definition.ParameterType != ParameterType.FamilyType || family == null) // Revit 2021
-      //  return;
-
+      #if REVIT2022
       if (!Category.IsBuiltInCategory(parameter.Definition.GetDataType())) // Revit 2022
         return;
+      #else
+      if (parameter.Definition.ParameterType != ParameterType.FamilyType || family == null) // Revit 2021
+        return;
+      #endif
 
       var familyTypeParameterValues = family
           .GetFamilyTypeParameterValues( parameter.Id )

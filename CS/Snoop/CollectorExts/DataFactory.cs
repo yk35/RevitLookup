@@ -60,8 +60,10 @@ namespace RevitLookup.Snoop.CollectorExts
                     return new ScheduleDefinitionGetFields(methodInfo.Name, (ScheduleDefinition)elem);
             }
 
+            #if REVIT2022
             if (declaringType == typeof(ViewCropRegionShapeManager) && methodInfo.Name == nameof(ViewCropRegionShapeManager.GetSplitRegionOffset))
                 return new ViewCropRegionShapeManagerGetSplitRegionOffsets(methodInfo.Name, (ViewCropRegionShapeManager)elem);
+            #endif
 
             if (declaringType == typeof(Curve) && methodInfo.Name == nameof(Curve.GetEndPoint))
                 return new CurveGetEndPoint(methodInfo.Name, (Curve)elem);

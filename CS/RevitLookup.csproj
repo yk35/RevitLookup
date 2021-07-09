@@ -2,22 +2,27 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop" ToolsVersion="15.0">
   <PropertyGroup>
     <AssemblyName>RevitLookup</AssemblyName>
-    <TargetFramework>net48</TargetFramework>
     <OutputType>Library</OutputType>
     <PlatformTarget>x64</PlatformTarget>
     <Platforms>x64</Platforms>
     <UseWpf>true</UseWpf>
+    <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Configurations>Debug;Release;Release2020;Release2018;Release2022;Release2021;Release2019</Configurations>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
-    <OutputPath>bin\Debug\</OutputPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
-    <OutputPath>bin\Release\</OutputPath>
-  </PropertyGroup>
+  <Import Project="$(SolutionDir)Targets\Revit.Base.Targets" Condition="Exists('$(SolutionDir)Targets\Revit.Base.Targets')" /> <!-- 各Revitバージョンに合わせた.Net Frameworkバージョンとバージョンに合わせた定数を記載しています。 -->
+  <Import Project="$(SolutionDir)Targets\Revit.RevitAPI.Targets" Condition="Exists('$(SolutionDir)Targets\Revit.RevitAPI.Targets')" /> <!-- 各Revitバージョンに合わせたRevitAPI.dll参照先を記載しています。 RevitAPIを使ってないなら必要なし。-->
+  <Import Project="$(SolutionDir)Targets\Revit.RevitAPIUI.Targets" Condition="Exists('$(SolutionDir)Targets\Revit.RevitAPIUI.Targets')" /> <!-- 各Revitバージョンに合わせたRevitAPIUI.dll参照先を記載しています。 RevitAPIUIを使ってないなら必要なし。-->
+  <!--  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">-->
+<!--    <OutputPath>bin\Debug\</OutputPath>-->
+<!--  </PropertyGroup>-->
+<!--  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">-->
+<!--    <OutputPath>bin\Release\</OutputPath>-->
+<!--  </PropertyGroup>-->
   <ItemGroup Condition="'$(CI)' != 'True'">
+<!--
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPI.dll</HintPath>
       <Private>false</Private>
@@ -26,6 +31,7 @@
       <HintPath>C:\Program Files\Autodesk\Revit 2022\RevitAPIUI.dll</HintPath>
       <Private>false</Private>
     </Reference>
+-->
   </ItemGroup>
   <ItemGroup Condition="'$(CI)' == 'True'">
     <Reference Include="RevitAPI">

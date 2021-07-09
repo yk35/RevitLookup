@@ -26,8 +26,10 @@ namespace RevitLookup.Snoop.Data
 
             List<SnoopableObjectWrapper> cropRegionOffsetObjects = new List<SnoopableObjectWrapper>();
 
+            #if !(REVIT2018 || REVIT2019 || REVIT2020)
             for (int i = 0; i < _viewCropRegionShapeManager.NumberOfSplitRegions; i++)
                 cropRegionOffsetObjects.Add(new SnoopableObjectWrapper("[" + i + "]", _viewCropRegionShapeManager.GetSplitRegionOffset(i)));
+            #endif
 
             if (!cropRegionOffsetObjects.Any()) return;
 

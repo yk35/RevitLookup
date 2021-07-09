@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Condition="'$(RevitBaseImported)' == ''" Project="Revit.Base.targets" />
+
+<!--
+  <ItemGroup Condition="'$(RevitVersion)' == '2015'">
+    <PackageReference Include="Revit.RevitApi.x64" Version="2015.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2016'">
+    <PackageReference Include="Revit.RevitApi.x64" Version="2016.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2017'">
+    <PackageReference Include="Revit.RevitApi.x64" Version="2017.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2018'">
+    <PackageReference Include="Revit.RevitApi.x64" Version="2018.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2019'">
+    <PackageReference Include="Revit.RevitApi.x64" Version="2019.0.0" />
+  </ItemGroup>
+  -->
+  <ItemGroup Condition="'$(RevitVersion)' == '2015'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2015\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2016'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2016\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2017'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2017\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2018'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2018\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2019'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2019\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2020'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(RevitVersion)' == '2021'">
+    <Reference Include="RevitAPI">
+      <HintPath>C:\Program Files\Autodesk\Revit 2021\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2016' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RevitVersion>2016</RevitVersion>
+    <BuildConfiguration>Debug</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2016\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2016' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RevitVersion>2016</RevitVersion>
+    <BuildConfiguration>Release</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2016\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2017' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RevitVersion>2017</RevitVersion>
+    <BuildConfiguration>Debug</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2017\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2017' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RevitVersion>2017</RevitVersion>
+    <BuildConfiguration>Release</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2017\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2018' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RevitVersion>2018</RevitVersion>
+    <BuildConfiguration>Debug</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2018\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2018' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RevitVersion>2018</RevitVersion>
+    <BuildConfiguration>Release</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2018\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2019' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RevitVersion>2019</RevitVersion>
+    <BuildConfiguration>Debug</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2019\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2019' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RevitVersion>2019</RevitVersion>
+    <BuildConfiguration>Release</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2019\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2020' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RevitVersion>2020</RevitVersion>
+    <BuildConfiguration>Debug</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2020\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2020' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RevitVersion>2020</RevitVersion>
+    <BuildConfiguration>Release</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2020\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2021' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RevitVersion>2021</RevitVersion>
+    <BuildConfiguration>Debug</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2021\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2021' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RevitVersion>2021</RevitVersion>
+    <BuildConfiguration>Release</BuildConfiguration>
+    <StartAction>Program</StartAction>
+    <StartProgram>C:\Program Files\Autodesk\Revit 2021\Revit.exe</StartProgram>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>False</EnableSQLServerDebugging>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <SignAssembly>false</SignAssembly>
+    <RevitBaseImported>true</RevitBaseImported>
+    <OutputPath>$(ProjectDir)bin\$(Configuration)\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(RevitVersion)' == '2015'">
+    <TargetFramework>net45</TargetFramework>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RevitConstants>REVIT2015</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RevitVersion)' == '2016'">
+    <TargetFramework>net45</TargetFramework>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RevitConstants>REVIT2016</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RevitVersion)' == '2017'">
+    <TargetFramework>net452</TargetFramework>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RevitConstants>REVIT2017</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RevitVersion)' == '2018'">
+    <TargetFramework>net452</TargetFramework>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RevitConstants>REVIT2018</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RevitVersion)' == '2019'">
+    <TargetFramework>net47</TargetFramework>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <RevitConstants>REVIT2019</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RevitVersion)' == '2020'">
+    <TargetFramework>net47</TargetFramework>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <RevitConstants>REVIT2020</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(RevitVersion)' == '2021'">
+    <TargetFramework>net48</TargetFramework>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RevitConstants>REVIT2021</RevitConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2016' ">
+    <DefineConstants>TRACE;DEBUG;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2016' ">
+    <DefineConstants>TRACE;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2017' ">
+    <DefineConstants>TRACE;DEBUG;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2017' ">
+    <DefineConstants>TRACE;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2018' ">
+    <DefineConstants>TRACE;DEBUG;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2018' ">
+    <DefineConstants>TRACE;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2019' ">
+    <DefineConstants>TRACE;DEBUG;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2019' ">
+    <DefineConstants>TRACE;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2020' ">
+    <DefineConstants>TRACE;DEBUG;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2020' ">
+    <DefineConstants>TRACE;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug2021' ">
+    <DefineConstants>TRACE;DEBUG;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release2021' ">
+    <DefineConstants>TRACE;$(RevitConstants)</DefineConstants>
+  </PropertyGroup>
+
+<!--
+  <ItemGroup>
+    <None Update="**\*.rvt"/>
+    <None Update="**\*.rte"/>
+    <None Update="**\*.rfa"/>
+    <None Update="**\*.rft"/>
+    <None Update="**\*.addin"/>
+  </ItemGroup>
+  -->
+</Project>
